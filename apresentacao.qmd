@@ -181,7 +181,7 @@ Isso é muito poderoso pois permite que você não perca ideias e tenha seus pen
 
 ## Quarto - CODE ALONG
 
-Vamos abrir um documento `.qmd` dentro do nosso projeto e:
+Vamos abrir um documento `.qmd` [dentro do nosso projeto]{.underline} e:
 
 -   Ver as etapas para abrir um documento (hoje apenas HTML)
 -   Avaliar a estrutura do documento
@@ -201,8 +201,8 @@ No nosso documento `.qmd`:
 
 Usando nosso código anterior com sintaxe `tidyverse`, ou se souber mais *seja criativo*:
 
-- Insira dois blocos de código -- um deve mostrar o código no HTML e outro apenas o resultado
-- Fale sobre o que calculou.
+-   Insira dois blocos de código -- um deve mostrar o código no HTML e outro apenas o resultado
+-   Fale sobre o que calculou.
 
 ```{{r}}
 penguins |>
@@ -214,5 +214,20 @@ penguins |>
               .by = tamanho_nadadeira)
 ```
 
-## SLIE SOBRE LINHA 16 DA PLANILHA
+## Editor: visual ou código
 
+\
+
+Vamos experimentar alternar nosso documento com um texto e os blocos de código entre os modos visual e Source!
+
+O que parece diferente?
+
+## Editor visual - CODE ALONG
+
+Em um `.qmd`, adicione: - tabela no visual (depois faremos uma bonita usando o kable) - figuras - matemática/latex - referencias bibliograficas + referencias cruzadas (internas ao documento)
+
+## Recursos
+
+[Fluxo de trabalho Rproject](https://youtu.be/A52Q50sIQ-I?si=tEWPX348mcwH_ZjR) [R4DS - R for DataScience 2e](https://r4ds.hadley.nz/) 
+[Novidades Tidyverse](https://www.tidyverse.org/blog/2023/08/teach-tidyverse-23/?mkt_tok=NzA5LU5YTi03MDYAAAGQ5fTVHPUSOcW39mLKapFgqb_pX1Qlq-dDO-LMNAUPmQvVQA5dcte6TWKYcvMCwsfLLah05xNVkB5z_oysYgPd6CTaqaa8VaBch1HPunvxw6w)
+[Guia Quarto](https://quarto.org/docs/guide/)
