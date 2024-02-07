@@ -88,6 +88,48 @@
     "href": "apresentacao.html#pastas-vs-.rproj-1",
     "title": "Do Código ao Compartilhamento",
     "section": "Pastas vs .Rproj",
-    "text": "Pastas vs .Rproj\n\n\nVantagens de se usar .Rproj:\n\nSeu código fica transportável\nElimina problemas de caminhos\nAproveita integrações, como a publicação dessa apresentação no GitHub como uma página!\n\n\n\n\nSlides por César Galvão, feito com Quarto. Código disponível no GitHub."
+    "text": "Pastas vs .Rproj\n\n\nVantagens de se usar .Rproj:\n\nSeu código fica transportável\nElimina problemas de caminhos\nAproveita integrações, como a publicação dessa apresentação no GitHub como uma página!"
+  },
+  {
+    "objectID": "apresentacao.html#quarto-wtf",
+    "href": "apresentacao.html#quarto-wtf",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Quarto wtf?",
+    "text": "Quarto wtf?\nO propósito inicial desse tipo de documento que chamamos de notebook é ser um caderno de laboratório.\n\nPensamos\nProgramamos/Calculamos\nTiramos conclusões\n\nIsso é muito poderoso pois permite que você não perca ideias e tenha seus pensamentos e seu trabalho num lugar só.\n\n\n\nSlides por César Galvão, feito com Quarto. Código disponível no GitHub."
+  },
+  {
+    "objectID": "apresentacao.html#quarto-notebook",
+    "href": "apresentacao.html#quarto-notebook",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Quarto (notebook)",
+    "text": "Quarto (notebook)\nO propósito inicial desse tipo de documento que chamamos de notebook é ser um caderno de laboratório. Em python temos o Jupyter!\n\nPensamos\nProgramamos/Calculamos\nTiramos conclusões\n\nIsso é muito poderoso pois permite que você não perca ideias e tenha seus pensamentos e seu trabalho num lugar só."
+  },
+  {
+    "objectID": "apresentacao.html#quarto---code-along",
+    "href": "apresentacao.html#quarto---code-along",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Quarto - CODE ALONG",
+    "text": "Quarto - CODE ALONG\nVamos abrir um documento .qmd dentro do nosso projeto e:\n\nVer as etapas para abrir um documento (hoje apenas HTML)\nAvaliar a estrutura do documento\n\nYAML\nTexto e títulos\nBlocos de código (inserir e calcular antes de renderizar)"
+  },
+  {
+    "objectID": "apresentacao.html#quarto---code-along-1",
+    "href": "apresentacao.html#quarto---code-along-1",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Quarto - CODE ALONG",
+    "text": "Quarto - CODE ALONG\nNo nosso documento .qmd:\n\nO que acontece com o bloco de código depois do Render?\nQuais são as opções de bloco de código?\nAlgum arquivo novo aparece no diretório depois do Render?"
+  },
+  {
+    "objectID": "apresentacao.html#quarto---exercício",
+    "href": "apresentacao.html#quarto---exercício",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Quarto - exercício",
+    "text": "Quarto - exercício\nUsando nosso código anterior com sintaxe tidyverse, ou se souber mais seja criativo:\n\nInsira dois blocos de código – um deve mostrar o código no HTML e outro apenas o resultado\nFale sobre o que calculou.\n\n```{r}\npenguins |&gt;\n   mutate(tamanho_nadadeira = \n              if_else(flipper_length_mm &gt; 200, \"longa\", \"curta\")) |&gt;\n   filter(!is.na(tamanho_nadadeira)) |&gt;\n   summarise(media_bico = mean(bill_length_mm),\n              desv_pad_bico = sd(bill_length_mm),\n              .by = tamanho_nadadeira)\n```"
+  },
+  {
+    "objectID": "apresentacao.html#slie-sobre-linha-16-da-planilha",
+    "href": "apresentacao.html#slie-sobre-linha-16-da-planilha",
+    "title": "Do Código ao Compartilhamento",
+    "section": "SLIE SOBRE LINHA 16 DA PLANILHA",
+    "text": "SLIE SOBRE LINHA 16 DA PLANILHA\n\n\n\nSlides por César Galvão, feito com Quarto. Código disponível no GitHub."
   }
 ]
