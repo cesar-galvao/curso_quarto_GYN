@@ -495,7 +495,40 @@ Integraremos esses assuntos para que tenhamos ao final:</p>
 <section>
 <section id="fluxo-de-trabalho-rstudio" class="title-slide slide level1 center">
 <h1>Fluxo de trabalho RStudio</h1>
-
+<p>Primeira tarefa: crie uma pasta para os arquivos desse curso!</p>
+</section>
+<section id="revisão---code-along" class="slide level2">
+<h2>Revisão - CODE ALONG</h2>
+<p>Em um script, vamos revisar:</p>
+<ul>
+<li class="fragment">Abrir um arquivo novo</li>
+<li class="fragment">library em <code>palmerpenguins</code> e <code>tidyverse</code> e explorar o que a mensagem inicial está nos avisando.</li>
+<li class="fragment">glimpse, mostrar o que tem no banco de dados</li>
+<li class="fragment">verbos <code>mutate</code>, <code>filter</code>, <code>summarize</code> + (<code>.by</code>) sem pipe</li>
+<li class="fragment">verbos usando pipe (<code>%&gt;%</code> ou <code>|&gt;</code>)</li>
+<li class="fragment"><code>getwd()</code></li>
+<li class="fragment">ler um csv (bivariate, enviar por email) – caminho completo</li>
+</ul>
+</section>
+<section id="rproject" class="slide level2">
+<h2>Rproject</h2>
+<p><br>
+</p>
+<p>Temos um problema, que é um caminho enorme para a leitura do <code>.csv</code> não replicável em outras máquinas.</p>
+<p><br>
+</p>
+<p>Rproject cria um ambiente contido de pastas e toma como referencial de todos os arquivos executáveis a pasta em que o <code>.Rproj</code> se localiza.</p>
+</section>
+<section id="rproject---code-along" class="slide level2">
+<h2>Rproject - CODE ALONG</h2>
+<p><br>
+</p>
+<p>Vamos abrir um Rproj e tentar responder:</p>
+<ul>
+<li class="fragment">O que muda na interface do RStudio?</li>
+<li class="fragment">Qual é a diferença quando executamos <code>getwd()</code>?</li>
+<li class="fragment">Leia o arquivo csv considerando o novo ambiente.</li>
+</ul>
 </section>
 <section id="pastas-vs-.rproj" class="slide level2">
 <h2>Pastas <em>vs</em> .Rproj</h2>
@@ -506,10 +539,21 @@ Integraremos esses assuntos para que tenhamos ao final:</p>
 <li class="fragment">Replicabilidade de <em>path</em> (ex: <code>C:\Bahia\Meus Documentos\...</code>)</li>
 <li class="fragment">Não aproveita outras integrações do .rmd, .qmd, etc</li>
 </ul>
+</section>
+<section id="pastas-vs-.rproj-1" class="slide level2">
+<h2>Pastas <em>vs</em> .Rproj</h2>
+<p><br>
+</p>
+<p>Vantagens de se usar .Rproj:</p>
+<ul>
+<li class="fragment">Seu código fica transportável</li>
+<li class="fragment">Elimina problemas de caminhos</li>
+<li class="fragment">Aproveita integrações, como a publicação dessa apresentação no GitHub como uma página!</li>
+</ul>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-<p>Slides por César Galvão, feito com Quarto. Código disponível no GitHub.</p>
+<p>Slides por César Galvão, feito com <a href="https://quarto.org/docs/presentations/revealjs/index.html">Quarto</a>. Código disponível no <a href="https://github.com/cesar-galvao/curso_quarto_GYN">GitHub</a>.</p>
 </div>
 </div>
 </section></section>

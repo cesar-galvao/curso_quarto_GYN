@@ -6,7 +6,7 @@ format:
   revealjs:
     theme: default
     incremental: true
-    footer: "Slides por César Galvão, feito com Quarto. Código disponível no GitHub."
+    footer: "Slides por César Galvão, feito com [Quarto](https://quarto.org/docs/presentations/revealjs/index.html). Código disponível no [GitHub](https://github.com/cesar-galvao/curso_quarto_GYN)."
 ---
 
 # Dia 1
@@ -89,6 +89,41 @@ Façam perguntas! (Povo online por favor me interrompa)
 
 # Fluxo de trabalho RStudio
 
+Primeira tarefa: crie uma pasta para os arquivos desse curso!
+
+## Revisão - CODE ALONG
+
+Em um script, vamos revisar:
+
+- Abrir um arquivo novo
+- library em `palmerpenguins` e  `tidyverse` e explorar o que a mensagem inicial está nos avisando.
+- glimpse, mostrar o que tem no banco de dados
+- verbos `mutate`, `filter`, `summarize` + (`.by`) sem pipe
+- verbos usando pipe (`%>%` ou `|>`)
+- `getwd()`
+- ler um csv (bivariate, enviar por email) -- caminho completo
+
+## Rproject
+
+\
+
+Temos um problema, que é um caminho enorme para a leitura do `.csv` não replicável em outras máquinas.
+
+\
+
+Rproject cria um ambiente contido de pastas e toma como referencial de todos os arquivos executáveis a pasta em que o `.Rproj` se localiza.
+
+## Rproject - CODE ALONG
+
+\
+
+Vamos abrir um Rproj e tentar responder: 
+
+- O que muda na interface do RStudio?
+- Qual é a diferença quando executamos `getwd()`?
+- Leia o arquivo csv considerando o novo ambiente.
+
+
 ## Pastas *vs* .Rproj
 
 \
@@ -97,3 +132,18 @@ Problemas de códigos em pastas comuns:
 
 - Replicabilidade de *path* (ex: `C:\Bahia\Meus Documentos\...`)
 - Não aproveita outras integrações do .rmd, .qmd, etc
+
+## Pastas *vs* .Rproj
+
+\
+
+Vantagens de se usar .Rproj:
+
+- Seu código fica transportável
+- Elimina problemas de caminhos
+- Aproveita integrações, como a publicação dessa apresentação no GitHub como uma página!
+
+# Intervalo
+
+20 minutos
+

@@ -53,6 +53,41 @@
     "href": "apresentacao.html#pastas-vs-.rproj",
     "title": "Do Código ao Compartilhamento",
     "section": "Pastas vs .Rproj",
-    "text": "Pastas vs .Rproj\n\n\nProblemas de códigos em pastas comuns:\n\nReplicabilidade de path (ex: C:\\Bahia\\Meus Documentos\\...)\nNão aproveita outras integrações do .rmd, .qmd, etc\n\n\n\n\nSlides por César Galvão, feito com Quarto. Código disponível no GitHub."
+    "text": "Pastas vs .Rproj\n\n\nProblemas de códigos em pastas comuns:\n\nReplicabilidade de path (ex: C:\\Bahia\\Meus Documentos\\...)\nNão aproveita outras integrações do .rmd, .qmd, etc"
+  },
+  {
+    "objectID": "apresentacao.html#revisão-do-básico-e-tidyverse---code-along",
+    "href": "apresentacao.html#revisão-do-básico-e-tidyverse---code-along",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Revisão do básico e Tidyverse - CODE ALONG",
+    "text": "Revisão do básico e Tidyverse - CODE ALONG\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSlides por César Galvão, feito com Quarto. Código disponível no GitHub."
+  },
+  {
+    "objectID": "apresentacao.html#revisão---code-along",
+    "href": "apresentacao.html#revisão---code-along",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Revisão - CODE ALONG",
+    "text": "Revisão - CODE ALONG\nEm um script, vamos revisar:\n\nAbrir um arquivo novo\nlibrary em palmerpenguins e tidyverse e explorar o que a mensagem inicial está nos avisando.\nglimpse, mostrar o que tem no banco de dados\nverbos mutate, filter, summarize + (.by) sem pipe\nverbos usando pipe (%&gt;% ou |&gt;)\ngetwd()\nler um csv (bivariate, enviar por email) – caminho completo"
+  },
+  {
+    "objectID": "apresentacao.html#rproject---code-along",
+    "href": "apresentacao.html#rproject---code-along",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Rproject - CODE ALONG",
+    "text": "Rproject - CODE ALONG\n\n\nVamos abrir um Rproj e tentar responder:\n\nO que muda na interface do RStudio?\nQual é a diferença quando executamos getwd()?\nLeia o arquivo csv considerando o novo ambiente."
+  },
+  {
+    "objectID": "apresentacao.html#rproject",
+    "href": "apresentacao.html#rproject",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Rproject",
+    "text": "Rproject\n\n\nTemos um problema, que é um caminho enorme para a leitura do .csv não replicável em outras máquinas.\n\n\nRproject cria um ambiente contido de pastas e toma como referencial de todos os arquivos executáveis a pasta em que o .Rproj se localiza."
+  },
+  {
+    "objectID": "apresentacao.html#pastas-vs-.rproj-1",
+    "href": "apresentacao.html#pastas-vs-.rproj-1",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Pastas vs .Rproj",
+    "text": "Pastas vs .Rproj\n\n\nVantagens de se usar .Rproj:\n\nSeu código fica transportável\nElimina problemas de caminhos\nAproveita integrações, como a publicação dessa apresentação no GitHub como uma página!\n\n\n\n\nSlides por César Galvão, feito com Quarto. Código disponível no GitHub."
   }
 ]
