@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "apresentacao.html#agradecimentos",
+    "href": "apresentacao.html#agradecimentos",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Agradecimentos",
+    "text": "Agradecimentos"
+  },
+  {
+    "objectID": "apresentacao.html#eu",
+    "href": "apresentacao.html#eu",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Eu",
+    "text": "Eu"
+  },
+  {
+    "objectID": "apresentacao.html#o-curso",
+    "href": "apresentacao.html#o-curso",
+    "title": "Do Código ao Compartilhamento",
+    "section": "O curso",
+    "text": "O curso\n\n\nDurante as 9 horas de aula, nos dedicaremos a:\n\nAprender o fluxo de trabalho do RStudio\nAprender o fluxo de trabalho do Git (uso do GitHub)\nProduzir um documento no Quarto"
+  },
+  {
+    "objectID": "apresentacao.html#o-curso-1",
+    "href": "apresentacao.html#o-curso-1",
+    "title": "Do Código ao Compartilhamento",
+    "section": "O curso",
+    "text": "O curso\n\nIntegraremos esses assuntos para que tenhamos ao final:\n\nGithub configurado com pelo menos 1 repositório\n1 relatório e 1 apresentação no Quarto\nCódigo do(s) nosso(s) documento(s) hospedado(s) no Github"
+  },
+  {
+    "objectID": "apresentacao.html#pedidos-recomendações-lembretes",
+    "href": "apresentacao.html#pedidos-recomendações-lembretes",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Pedidos, Recomendações, Lembretes",
+    "text": "Pedidos, Recomendações, Lembretes\n\n\n\n\n\n\n\n\nWarning\n\n\nNão é um curso de análise, mas de programação para cientistas.\n\n\n\n\n\n\n\n\n\nWarning\n\n\nTentem não avançar passos à frente do que está sendo apresentado nem a ler conteúdo da interface enquanto progredimos. Eu apontarei o que é importante no momento."
+  },
+  {
+    "objectID": "apresentacao.html#pedidos-recomendações-lembretes-1",
+    "href": "apresentacao.html#pedidos-recomendações-lembretes-1",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Pedidos, Recomendações, Lembretes",
+    "text": "Pedidos, Recomendações, Lembretes\n\n\n\n\n\n\n\n\nTip\n\n\nLeiam os detalhes depois das aulas!\n\n\n\n\n\n\n\n\n\nTip\n\n\nFaçam perguntas! (Povo online por favor me interrompa)"
+  },
+  {
+    "objectID": "apresentacao.html#fluxo-da-análise",
+    "href": "apresentacao.html#fluxo-da-análise",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Fluxo da análise",
+    "text": "Fluxo da análise\n\n\n\nFonte: R for DataScience (2e) - H. Wickham, M. Çetinkaya-Rundel e G. Grolemund"
+  },
+  {
+    "objectID": "apresentacao.html#pastas-vs-.rproj",
+    "href": "apresentacao.html#pastas-vs-.rproj",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Pastas vs .Rproj",
+    "text": "Pastas vs .Rproj\n\n\nProblemas de códigos em pastas comuns:\n\nReplicabilidade de path (ex: C:\\Bahia\\Meus Documentos\\...)\nNão aproveita outras integrações do .rmd, .qmd, etc\n\n\n\n\nSlides por César Galvão, feito com Quarto. Código disponível no GitHub."
+  }
+]
