@@ -158,13 +158,20 @@
     "href": "apresentacao.html#editor-visual---code-along",
     "title": "Do Código ao Compartilhamento",
     "section": "Editor visual - CODE ALONG",
-    "text": "Editor visual - CODE ALONG\nEm um .qmd, adicione: - tabela no visual (depois faremos uma bonita usando o kable) - figuras - matemática/latex - referencias bibliograficas + referencias cruzadas (internas ao documento)"
+    "text": "Editor visual - CODE ALONG\n\n\nEm um .qmd, adicione: - tabela no visual (depois faremos uma bonita usando o kable) - figuras - matemática/latex - referencias bibliograficas + referencias cruzadas (internas ao documento)"
   },
   {
     "objectID": "apresentacao.html#recursos",
     "href": "apresentacao.html#recursos",
     "title": "Do Código ao Compartilhamento",
     "section": "Recursos",
-    "text": "Recursos\nFluxo de trabalho Rproject R4DS - R for DataScience 2e Novidades Tidyverse Guia Quarto\n\n\n\nSlides por César Galvão, feito com Quarto. Código disponível no GitHub."
+    "text": "Recursos\n\n\nFluxo de trabalho Rproject R4DS - R for DataScience 2e Novidades Tidyverse Guia Quarto"
+  },
+  {
+    "objectID": "apresentacao.html#revisão",
+    "href": "apresentacao.html#revisão",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Revisão",
+    "text": "Revisão\n\n\n\nSlides por César Galvão, feito com Quarto. Código disponível no GitHub."
   }
 ]
