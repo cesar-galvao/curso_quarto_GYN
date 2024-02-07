@@ -1,0 +1,99 @@
+---
+title: "Do Código ao Compartilhamento"
+subtitle: "Trabalhando com RStudio, Quarto e Github"
+author: "César A. Galvão"
+format: 
+  revealjs:
+    theme: default
+    incremental: true
+    footer: "Slides por César Galvão, feito com Quarto. Código disponível no GitHub."
+---
+
+# Dia 1
+
+Apresentação, revisões, Rproject e Quarto
+
+## Agradecimentos
+
+\
+\
+
+::: {layout-ncol="3"}
+![](imagens/lamp.jpeg){fig-align="center" width="65%"}
+
+![](imagens/Untitled.jpeg){fig-align="center" width="65%"}
+
+![](imagens/unb.jpg){fig-align="center" width="80%"}
+:::
+
+
+## Eu
+
+![](imagens/cesar-git.jpeg)
+
+## O curso
+\
+
+Durante as 9 horas de aula, nos dedicaremos a:
+
+-   Aprender o fluxo de trabalho do RStudio
+-   Aprender o fluxo de trabalho do Git (uso do GitHub)
+-   Produzir um documento no Quarto
+
+
+::: {layout-ncol="3"}
+![](imagens/RStudio_Logo.png){fig-align="center" width="65%"}
+
+![](imagens/GitHub_Invertocat_Logo.svg.png){fig-align="center" width="40%"}
+
+![](imagens/quarto.png){fig-align="center" width="65%"}
+:::
+
+## O curso
+\
+Integraremos esses assuntos para que tenhamos ao final:
+
+-   Github configurado com pelo menos 1 repositório
+-   1 relatório e 1 apresentação no Quarto
+-   Código do(s) nosso(s) documento(s) hospedado(s) no Github
+
+## Pedidos, Recomendações, Lembretes
+\
+
+::: callout-warning
+Não é um curso de análise, mas de programação para cientistas.
+:::
+
+
+::: callout-warning
+Tentem não avançar passos à frente do que está sendo apresentado nem a ler conteúdo da interface enquanto progredimos. Eu apontarei o que é importante no momento.
+:::
+
+## Pedidos, Recomendações, Lembretes
+
+\
+
+::: callout-tip
+Leiam os detalhes depois das aulas!
+:::
+
+::: callout-tip
+Façam perguntas! (Povo online por favor me interrompa)
+:::
+
+## Fluxo da análise
+
+\
+
+![Fonte: R for DataScience (2e) - H. Wickham, M. Çetinkaya-Rundel e G. Grolemund](imagens/fluxo_analise.png){fig-align="center" width="100%"}
+
+# Fluxo de trabalho RStudio
+
+## Pastas *vs* .Rproj
+
+\
+
+Problemas de códigos em pastas comuns:
+
+- Replicabilidade de *path* (ex: `C:\Bahia\Meus Documentos\...`)
+- Não aproveita outras integrações do .rmd, .qmd, etc
