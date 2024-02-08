@@ -2,8 +2,8 @@
     "sortOrder": [
         {
             "columnIndex": 2,
-            "ascending": true
+            "ascending": false
         }
     ],
-    "path": "~/Documents/r-projects/curso_quarto_GYN"
+    "path": "~/Documents/r-projects/curso_quarto_GYN/imagens"
 }

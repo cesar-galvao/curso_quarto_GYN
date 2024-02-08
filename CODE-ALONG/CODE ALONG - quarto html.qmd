@@ -6,7 +6,7 @@ bibliography: references.bib
 
 ## Dataset
 
-blah blab [@resende2019]. Mas também [@vieiragomes2018].
+blah blab [@resende2019a]. Mas também [@vieiragomes2018].
 
 ```{r}
 library(palmerpenguins)

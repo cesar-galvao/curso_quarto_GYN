@@ -226,16 +226,211 @@ O que parece diferente?
 
 \
 
-Em um `.qmd`, adicione: - tabela no visual (depois faremos uma bonita usando o kable) - figuras - matemática/latex - referencias bibliograficas + referencias cruzadas (internas ao documento)
+Em um `.qmd`, adicione:
+
+-   tabela no visual (depois faremos uma bonita usando o kable)
+-   figuras
+-   matemática/latex
+-   referencias bibliograficas + referencias cruzadas (internas ao documento)
 
 ## Recursos
 
 \
 
-[Fluxo de trabalho Rproject](https://youtu.be/A52Q50sIQ-I?si=tEWPX348mcwH_ZjR) [R4DS - R for DataScience 2e](https://r4ds.hadley.nz/) 
+[Fluxo de trabalho Rproject](https://youtu.be/A52Q50sIQ-I?si=tEWPX348mcwH_ZjR)
+
+[R4DS - R for DataScience 2e](https://r4ds.hadley.nz/)
+
 [Novidades Tidyverse](https://www.tidyverse.org/blog/2023/08/teach-tidyverse-23/?mkt_tok=NzA5LU5YTi03MDYAAAGQ5fTVHPUSOcW39mLKapFgqb_pX1Qlq-dDO-LMNAUPmQvVQA5dcte6TWKYcvMCwsfLLah05xNVkB5z_oysYgPd6CTaqaa8VaBch1HPunvxw6w)
+
 [Guia Quarto](https://quarto.org/docs/guide/)
 
-## Revisão
+# Dia 2
+
+Git, relatórios em PDF
+
+## Recapitulando
+
+Vimos:
+
+-   Uso de sintaxe `tidyverse` para termos um código mais inteligível
+-   Uso do Rproject para termos um código transportável
+-   Uso do Quarto para produzirmos um documento básico e seus componentes
+    -   Cabeçalho
+    -   Texto
+    -   Blocos de código e suas opções
+
+# Git
+
+Compartilhando e guardando código!
+
+::: {layout="[[-20,10,-20]]"}
+![](imagens/git-logo.png){fig-align="center" layout-valign="top"}
+:::
+
+## Git: o que é? O que come?
+
+**Definição:** sistema de controle distribuído que monitora alterações em qualquer conjunto de arquivos de computador, comumente usado para coordenar trabalho entre programadores que estão desenvolvendo código fonte de forma colaborativa. Seus objetivos incluem velocidade, integridade e suporte para fluxos de trabalho distribuídos e não lineares.
+
+::: {layout="[[-70,30]]"}
+![](imagens/smile2.jpg){fig-align="right" layout-valign="top"}
+:::
+
+## Git: o que é? O que come?
+
+Pescando palavras-chave: é um sistema para trabalhar em grupo de forma assíncrona com foco na velocidade de colaboração e integridade do código, garantindo um controle de versões.
+
+
+
+
+## Git: fluxo de trabalho
+
+![](imagens/git-flow.png)
+
+
+## Git: fluxo de trabalho
+
+Dando um zoom em cada vértice da imagem anterior:
+
+- **Commit**: etapa de preparo que fecha um pacote de alterações
+- **Push**: manda para o servidor o pacote para ser integrado ao branch em que está trabalhando
+- **Pull**: quando se trabalha com mais pessoas, puxa as alterações que fizeram para que você trabalhe em uma versão atualizada.
+
+## Git: operação
+
+Podemos usar:
+
+- Terminal
+- RStudio
+- Aplicativo desktop
+- etc
+
+O ideal é aprender o que melhor combina com as suas habilidades!
+
+
+## GitHub
+
+Vamos explorar a interface do Github!
+
+- Dashboard
+- Menu lateral
+- Perfil
+- Repositórios
+
+
+## Repositórios
+
+Repositório é o conceito principal por trás da funcionalidade do GIT.
+
+É como um drive, com registro de todas as alterações feitras e por quem foram feitas. Assim, podemos resgatar um estado anterior!
+
+Vamos baixar e abrir o github desktop e conectar a nossa conta Github em <https://desktop.github.com/>.
+
+
+
+## Criando um repositório - CODE ALONG
+
+Formas de criar um repositório:
+
+- Github
+- Github desktop -- vamos usar esse
+
+Com o repositório criado, vamos povoar com arquivos
+
+- Verificar no github desktop as alterações
+- Commit
+- Push
+- Ver as alterações no GitHub web
+
+
+## Clonando um repositório - CODE ALONG
+
+Copiando ou clonando um repositório de um colega
+
+- Acessar o repositório do seu colega
+- Baixar o .zip OU copiar a URL
+- Usar o github desktop para clonar
+
+Vamos reunir o nome dos repositórios de todos!
+
+## Finalizando
+
+Exemplo:
+
+- Tradução R4DS: <https://github.com/orgs/cienciadedatos/projects/2/views/1>
+- Recurso: <https://happygitwithr.com/>
+
+
+# Relatórios com Quarto
+
+::: {layout="[[-20,20,-20]]"}
+![](imagens/fig-relatorios.png){fig-align="center" layout-valign="top"}
+:::
+
+## Composição de artigo/relatório
+
+\
+\
+Quais elementos compõem um artigo ou relatório?
+
+Que tipos de leitores temos?
+
+Vamos visitar o guia básico de PDF no Quarto.
+
+
+
+## Composição de artigo/relatório
+
+Temos 20 minutos para:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Criar um PDF no editor visual com o máximo de coisas que listamos
+- É **necessário** ter um gráfico em ggplot
+- É **necessário** ter uma referência cruzada para uma tabela, equação ou figura
+- **Usem o chatGPT**.
+:::
+
+::: {.column width="50%"}
+Recursos:
+
+- <https://quarto.org/docs/output-formats/pdf-basics.html>
+- <https://quarto.org/docs/reference/formats/pdf.html>
+:::
+
+::::
+
+
+## Apresentação
+
+Precisamos de 4 ou 5 voluntários para apresentarmos os relatórios:
+
+- De quem sentiu que falhou miseravelmente
+- De quem sente que teve muito sucesso 
+
+
+## Integrando
+
+Vamos subir nossos relatórios prontos nos próprios gits.
+
+Clonem o repositório que gostaram mais ou copiem o código direto do repositório.
+
+## Recapitulando
+
+- Trabalhamos com Git
+- Usamos o Github Desktop para operar o repositório
+- Produzimos um relatório em PDF
+- Atualizamos nosso repositório
+- Copiamos um repositório do nosso interesse
+
+
+## Amanhã
+
+Teremos uma sessão mais curta!
+
+- Apresentações
+- Github pages
+- Outros formatos
 
 

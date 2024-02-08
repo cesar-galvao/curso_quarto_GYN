@@ -137,14 +137,14 @@
     "href": "CODE ALONG - quarto html.html",
     "title": "curso_quarto_GYN",
     "section": "",
-    "text": "blah blab (Resende et al. 2019). Mas também (Vieira Gomes et al. 2018).\n\nlibrary(palmerpenguins)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.4.4     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.0\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nglimpse(palmerpenguins::penguins)\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…\n\npenguins\n\n# A tibble: 344 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Torgersen           39.1          18.7               181        3750\n 2 Adelie  Torgersen           39.5          17.4               186        3800\n 3 Adelie  Torgersen           40.3          18                 195        3250\n 4 Adelie  Torgersen           NA            NA                  NA          NA\n 5 Adelie  Torgersen           36.7          19.3               193        3450\n 6 Adelie  Torgersen           39.3          20.6               190        3650\n 7 Adelie  Torgersen           38.9          17.8               181        3625\n 8 Adelie  Torgersen           39.2          19.6               195        4675\n 9 Adelie  Torgersen           34.1          18.1               193        3475\n10 Adelie  Torgersen           42            20.2               190        4250\n# ℹ 334 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\n\npenguins %&gt;%\n  summarise(\n    media_bico = mean(bill_length_mm, na.rm = T),\n    .by = species\n  )\n\n# A tibble: 3 × 2\n  species   media_bico\n  &lt;fct&gt;          &lt;dbl&gt;\n1 Adelie          38.8\n2 Gentoo          47.5\n3 Chinstrap       48.8\n\n\n\n\n\n\nCol1\nCol2\nCol3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\nabla\n\\tag{1}\\]\nWe can refer to Equation 1 with `@`\n\ndata.frame(\n  x = c(rnorm(250, mean = 2), rnorm(250, mean = 0)),\n  y = rnorm(500, mean = 0),\n  grupo = rep(c(\"A\", \"B\"), each = 250)\n) %&gt;%\n  summarize(media = mean(x), .by = grupo)\n\n  grupo      media\n1     A 2.00004975\n2     B 0.02336559"
+    "text": "blah blab (Resende et al. 2019). Mas também (Vieira Gomes et al. 2018).\n\nlibrary(palmerpenguins)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.4.4     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.0\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nglimpse(palmerpenguins::penguins)\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…\n\npenguins\n\n# A tibble: 344 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Torgersen           39.1          18.7               181        3750\n 2 Adelie  Torgersen           39.5          17.4               186        3800\n 3 Adelie  Torgersen           40.3          18                 195        3250\n 4 Adelie  Torgersen           NA            NA                  NA          NA\n 5 Adelie  Torgersen           36.7          19.3               193        3450\n 6 Adelie  Torgersen           39.3          20.6               190        3650\n 7 Adelie  Torgersen           38.9          17.8               181        3625\n 8 Adelie  Torgersen           39.2          19.6               195        4675\n 9 Adelie  Torgersen           34.1          18.1               193        3475\n10 Adelie  Torgersen           42            20.2               190        4250\n# ℹ 334 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\n\npenguins %&gt;%\n  summarise(\n    media_bico = mean(bill_length_mm, na.rm = T),\n    .by = species\n  )\n\n# A tibble: 3 × 2\n  species   media_bico\n  &lt;fct&gt;          &lt;dbl&gt;\n1 Adelie          38.8\n2 Gentoo          47.5\n3 Chinstrap       48.8\n\n\n\n\n\n\nCol1\nCol2\nCol3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\nabla\n\\tag{1}\\]\nWe can refer to Equation 1 with `@`\n\ndata.frame(\n  x = c(rnorm(250, mean = 2), rnorm(250, mean = 0)),\n  y = rnorm(500, mean = 0),\n  grupo = rep(c(\"A\", \"B\"), each = 250)\n) %&gt;%\n  summarize(media = mean(x), .by = grupo)\n\n  grupo       media\n1     A  1.90248315\n2     B -0.07981866"
   },
   {
     "objectID": "CODE ALONG - quarto html.html#dataset",
     "href": "CODE ALONG - quarto html.html#dataset",
     "title": "curso_quarto_GYN",
     "section": "",
-    "text": "blah blab (Resende et al. 2019). Mas também (Vieira Gomes et al. 2018).\n\nlibrary(palmerpenguins)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.4.4     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.0\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nglimpse(palmerpenguins::penguins)\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…\n\npenguins\n\n# A tibble: 344 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Torgersen           39.1          18.7               181        3750\n 2 Adelie  Torgersen           39.5          17.4               186        3800\n 3 Adelie  Torgersen           40.3          18                 195        3250\n 4 Adelie  Torgersen           NA            NA                  NA          NA\n 5 Adelie  Torgersen           36.7          19.3               193        3450\n 6 Adelie  Torgersen           39.3          20.6               190        3650\n 7 Adelie  Torgersen           38.9          17.8               181        3625\n 8 Adelie  Torgersen           39.2          19.6               195        4675\n 9 Adelie  Torgersen           34.1          18.1               193        3475\n10 Adelie  Torgersen           42            20.2               190        4250\n# ℹ 334 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\n\npenguins %&gt;%\n  summarise(\n    media_bico = mean(bill_length_mm, na.rm = T),\n    .by = species\n  )\n\n# A tibble: 3 × 2\n  species   media_bico\n  &lt;fct&gt;          &lt;dbl&gt;\n1 Adelie          38.8\n2 Gentoo          47.5\n3 Chinstrap       48.8\n\n\n\n\n\n\nCol1\nCol2\nCol3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\nabla\n\\tag{1}\\]\nWe can refer to Equation 1 with `@`\n\ndata.frame(\n  x = c(rnorm(250, mean = 2), rnorm(250, mean = 0)),\n  y = rnorm(500, mean = 0),\n  grupo = rep(c(\"A\", \"B\"), each = 250)\n) %&gt;%\n  summarize(media = mean(x), .by = grupo)\n\n  grupo      media\n1     A 2.00004975\n2     B 0.02336559"
+    "text": "blah blab (Resende et al. 2019). Mas também (Vieira Gomes et al. 2018).\n\nlibrary(palmerpenguins)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.4.4     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.0\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nglimpse(palmerpenguins::penguins)\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…\n\npenguins\n\n# A tibble: 344 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Torgersen           39.1          18.7               181        3750\n 2 Adelie  Torgersen           39.5          17.4               186        3800\n 3 Adelie  Torgersen           40.3          18                 195        3250\n 4 Adelie  Torgersen           NA            NA                  NA          NA\n 5 Adelie  Torgersen           36.7          19.3               193        3450\n 6 Adelie  Torgersen           39.3          20.6               190        3650\n 7 Adelie  Torgersen           38.9          17.8               181        3625\n 8 Adelie  Torgersen           39.2          19.6               195        4675\n 9 Adelie  Torgersen           34.1          18.1               193        3475\n10 Adelie  Torgersen           42            20.2               190        4250\n# ℹ 334 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\n\npenguins %&gt;%\n  summarise(\n    media_bico = mean(bill_length_mm, na.rm = T),\n    .by = species\n  )\n\n# A tibble: 3 × 2\n  species   media_bico\n  &lt;fct&gt;          &lt;dbl&gt;\n1 Adelie          38.8\n2 Gentoo          47.5\n3 Chinstrap       48.8\n\n\n\n\n\n\nCol1\nCol2\nCol3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\nabla\n\\tag{1}\\]\nWe can refer to Equation 1 with `@`\n\ndata.frame(\n  x = c(rnorm(250, mean = 2), rnorm(250, mean = 0)),\n  y = rnorm(500, mean = 0),\n  grupo = rep(c(\"A\", \"B\"), each = 250)\n) %&gt;%\n  summarize(media = mean(x), .by = grupo)\n\n  grupo       media\n1     A  1.90248315\n2     B -0.07981866"
   },
   {
     "objectID": "apresentacao.html#editor-visual-ou-código",
@@ -158,14 +158,14 @@
     "href": "apresentacao.html#editor-visual---code-along",
     "title": "Do Código ao Compartilhamento",
     "section": "Editor visual - CODE ALONG",
-    "text": "Editor visual - CODE ALONG\n\n\nEm um .qmd, adicione: - tabela no visual (depois faremos uma bonita usando o kable) - figuras - matemática/latex - referencias bibliograficas + referencias cruzadas (internas ao documento)"
+    "text": "Editor visual - CODE ALONG\n\n\nEm um .qmd, adicione:\n\ntabela no visual (depois faremos uma bonita usando o kable)\nfiguras\nmatemática/latex\nreferencias bibliograficas + referencias cruzadas (internas ao documento)"
   },
   {
     "objectID": "apresentacao.html#recursos",
     "href": "apresentacao.html#recursos",
     "title": "Do Código ao Compartilhamento",
     "section": "Recursos",
-    "text": "Recursos\n\n\nFluxo de trabalho Rproject R4DS - R for DataScience 2e Novidades Tidyverse Guia Quarto"
+    "text": "Recursos\n\n\nFluxo de trabalho Rproject\nR4DS - R for DataScience 2e\nNovidades Tidyverse\nGuia Quarto"
   },
   {
     "objectID": "apresentacao.html#revisão",
@@ -173,5 +173,145 @@
     "title": "Do Código ao Compartilhamento",
     "section": "Revisão",
     "text": "Revisão\n\n\n\nSlides por César Galvão, feito com Quarto. Código disponível no GitHub."
+  },
+  {
+    "objectID": "teste1.html",
+    "href": "teste1.html",
+    "title": "Dia 1",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\nlibrary(tidyverse)\nbivar &lt;- read.csv(\"data/bivariate.csv\")\n\nFizemos a leitura do arquivo bivar e carregamos o pacote Tidyverse.\n\n\n[1] 0.9804926\n\n\n\n#calcula 1+1\n1+1\n\n\\[\\begin{align}\n  \\nabla x\n\\end{align}\\]"
+  },
+  {
+    "objectID": "teste1.html#quarto",
+    "href": "teste1.html#quarto",
+    "title": "Dia 1",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\nlibrary(tidyverse)\nbivar &lt;- read.csv(\"data/bivariate.csv\")\n\nFizemos a leitura do arquivo bivar e carregamos o pacote Tidyverse.\n\n\n[1] 0.9804926\n\n\n\n#calcula 1+1\n1+1\n\n\\[\\begin{align}\n  \\nabla x\n\\end{align}\\]"
+  },
+  {
+    "objectID": "teste1.html#running-code",
+    "href": "teste1.html#running-code",
+    "title": "Dia 1",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n\nTabela de exemplo\n\n\nCol1\nCol2\nCol3\n\n\n\n\nasdf\n1234\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\nabla patos = ovo\n\\tag{1}\\]\nNa equacao Equation 1 falamos sobre o codigo de @primeiro-bloco-python"
+  },
+  {
+    "objectID": "apresentacao.html#recapitulando",
+    "href": "apresentacao.html#recapitulando",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Recapitulando",
+    "text": "Recapitulando\nVimos:\n\nUso de sintaxe tidyverse para termos um código mais inteligível\nUso do Rproject para termos um código transportável\nUso do Quarto para produzirmos um documento básico e seus componentes\n\nCabeçalho\nTexto\nBlocos de código e suas opções"
+  },
+  {
+    "objectID": "apresentacao.html#git-o-que-é-o-que-come",
+    "href": "apresentacao.html#git-o-que-é-o-que-come",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Git: o que é? O que come?",
+    "text": "Git: o que é? O que come?\nDefinição: sistema de controle distribuído que monitora alterações em qualquer conjunto de arquivos de computador, comumente usado para coordenar trabalho entre programadores que estão desenvolvendo código fonte de forma colaborativa. Seus objetivos incluem velocidade, integridade e suporte para fluxos de trabalho distribuídos e não lineares."
+  },
+  {
+    "objectID": "apresentacao.html#git-o-que-é-o-que-come-1",
+    "href": "apresentacao.html#git-o-que-é-o-que-come-1",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Git: o que é? O que come?",
+    "text": "Git: o que é? O que come?\nPescando palavras-chave: é um sistema para trabalhar em grupo de forma assíncrona com foco na velocidade de colaboração e integridade do código, garantindo um controle de versões."
+  },
+  {
+    "objectID": "apresentacao.html#git-fluxo-de-trabalho",
+    "href": "apresentacao.html#git-fluxo-de-trabalho",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Git: fluxo de trabalho",
+    "text": "Git: fluxo de trabalho"
+  },
+  {
+    "objectID": "apresentacao.html#git-fluxo-de-trabalho-1",
+    "href": "apresentacao.html#git-fluxo-de-trabalho-1",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Git: fluxo de trabalho",
+    "text": "Git: fluxo de trabalho\nDando um zoom em cada vértice da imagem anterior:\n\nCommit: etapa de preparo que fecha um pacote de alterações\nPush: manda para o servidor o pacote para ser integrado ao branch em que está trabalhando\nPull: quando se trabalha com mais pessoas, puxa as alterações que fizeram para que você trabalhe em uma versão atualizada."
+  },
+  {
+    "objectID": "apresentacao.html#git-operação",
+    "href": "apresentacao.html#git-operação",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Git: operação",
+    "text": "Git: operação\nPodemos usar:\n\nTerminal\nRStudio\nAplicativo desktop\netc\n\nO ideal é aprender o que melhor combina com as suas habilidades!"
+  },
+  {
+    "objectID": "apresentacao.html#github",
+    "href": "apresentacao.html#github",
+    "title": "Do Código ao Compartilhamento",
+    "section": "GitHub",
+    "text": "GitHub\nVamos explorar a interface do Github!\n\nDashboard\nMenu lateral\nPerfil\nRepositórios"
+  },
+  {
+    "objectID": "apresentacao.html#repositórios",
+    "href": "apresentacao.html#repositórios",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Repositórios",
+    "text": "Repositórios\nRepositório é o conceito principal por trás da funcionalidade do GIT.\nÉ como um drive, com registro de todas as alterações feitras e por quem foram feitas. Assim, podemos resgatar um estado anterior!\nVamos baixar e abrir o github desktop e conectar a nossa conta Github em https://desktop.github.com/."
+  },
+  {
+    "objectID": "apresentacao.html#criando-um-repositório---code-along",
+    "href": "apresentacao.html#criando-um-repositório---code-along",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Criando um repositório - CODE ALONG",
+    "text": "Criando um repositório - CODE ALONG\nFormas de criar um repositório:\n\nGithub\nGithub desktop – vamos usar esse\n\nCom o repositório criado, vamos povoar com arquivos\n\nVerificar no github desktop as alterações\nCommit\nPush\nVer as alterações no GitHub web"
+  },
+  {
+    "objectID": "apresentacao.html#clonando-um-repositório---code-along",
+    "href": "apresentacao.html#clonando-um-repositório---code-along",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Clonando um repositório - CODE ALONG",
+    "text": "Clonando um repositório - CODE ALONG\nCopiando ou clonando um repositório de um colega\n\nAcessar o repositório do seu colega\nBaixar o .zip OU copiar a URL\nUsar o github desktop para clonar\n\nVamos reunir o nome dos repositórios de todos!"
+  },
+  {
+    "objectID": "apresentacao.html#finalizando",
+    "href": "apresentacao.html#finalizando",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Finalizando",
+    "text": "Finalizando\nExemplo:\n\nTradução R4DS: https://github.com/orgs/cienciadedatos/projects/2/views/1\nRecurso: https://happygitwithr.com/"
+  },
+  {
+    "objectID": "apresentacao.html#composição-de-artigorelatório",
+    "href": "apresentacao.html#composição-de-artigorelatório",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Composição de artigo/relatório",
+    "text": "Composição de artigo/relatório\n\n\nQuais elementos compõem um artigo ou relatório?\nQue tipos de leitores temos?\nVamos visitar o guia básico de PDF no Quarto."
+  },
+  {
+    "objectID": "apresentacao.html#composição-de-artigorelatório-1",
+    "href": "apresentacao.html#composição-de-artigorelatório-1",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Composição de artigo/relatório",
+    "text": "Composição de artigo/relatório\nTemos 20 minutos para:\n\n\n\nCriar um PDF no editor visual com o máximo de coisas que listamos\nÉ necessário ter um gráfico em ggplot\nÉ necessário ter uma referência cruzada para uma tabela, equação ou figura\nUsem o chatGPT.\n\n\nRecursos:\n\nhttps://quarto.org/docs/output-formats/pdf-basics.html\nhttps://quarto.org/docs/reference/formats/pdf.html"
+  },
+  {
+    "objectID": "apresentacao.html#apresentação",
+    "href": "apresentacao.html#apresentação",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Apresentação",
+    "text": "Apresentação\nPrecisamos de 4 ou 5 voluntários para apresentarmos os relatórios:\n\nDe quem sentiu que falhou miseravelmente\nDe quem sente que teve muito sucesso"
+  },
+  {
+    "objectID": "apresentacao.html#integrando",
+    "href": "apresentacao.html#integrando",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Integrando",
+    "text": "Integrando\nVamos subir nossos relatórios prontos nos próprios gits.\nClonem o repositório que gostaram mais ou copiem o código direto do repositório."
+  },
+  {
+    "objectID": "apresentacao.html#recapitulando-1",
+    "href": "apresentacao.html#recapitulando-1",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Recapitulando",
+    "text": "Recapitulando\n\nTrabalhamos com Git\nUsamos o Github Desktop para operar o repositório\nProduzimos um relatório em PDF\nAtualizamos nosso repositório\nCopiamos um repositório do nosso interesse"
+  },
+  {
+    "objectID": "apresentacao.html#amanhã",
+    "href": "apresentacao.html#amanhã",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Amanhã",
+    "text": "Amanhã\nTeremos uma sessão mais curta!\n\nApresentações\nGithub pages\nOutros formatos\n\n\n\n\nSlides por César Galvão, feito com Quarto. Código disponível no GitHub."
   }
 ]

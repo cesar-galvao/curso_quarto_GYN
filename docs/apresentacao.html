@@ -744,16 +744,239 @@ Integraremos esses assuntos para que tenhamos ao final:</p>
 <h2>Editor visual - CODE ALONG</h2>
 <p><br>
 </p>
-<p>Em um <code>.qmd</code>, adicione: - tabela no visual (depois faremos uma bonita usando o kable) - figuras - matemática/latex - referencias bibliograficas + referencias cruzadas (internas ao documento)</p>
+<p>Em um <code>.qmd</code>, adicione:</p>
+<ul>
+<li class="fragment">tabela no visual (depois faremos uma bonita usando o kable)</li>
+<li class="fragment">figuras</li>
+<li class="fragment">matemática/latex</li>
+<li class="fragment">referencias bibliograficas + referencias cruzadas (internas ao documento)</li>
+</ul>
 </section>
 <section id="recursos" class="slide level2">
 <h2>Recursos</h2>
 <p><br>
 </p>
-<p><a href="https://youtu.be/A52Q50sIQ-I?si=tEWPX348mcwH_ZjR">Fluxo de trabalho Rproject</a> <a href="https://r4ds.hadley.nz/">R4DS - R for DataScience 2e</a> <a href="https://www.tidyverse.org/blog/2023/08/teach-tidyverse-23/?mkt_tok=NzA5LU5YTi03MDYAAAGQ5fTVHPUSOcW39mLKapFgqb_pX1Qlq-dDO-LMNAUPmQvVQA5dcte6TWKYcvMCwsfLLah05xNVkB5z_oysYgPd6CTaqaa8VaBch1HPunvxw6w">Novidades Tidyverse</a> <a href="https://quarto.org/docs/guide/">Guia Quarto</a></p>
+<p><a href="https://youtu.be/A52Q50sIQ-I?si=tEWPX348mcwH_ZjR">Fluxo de trabalho Rproject</a></p>
+<p><a href="https://r4ds.hadley.nz/">R4DS - R for DataScience 2e</a></p>
+<p><a href="https://www.tidyverse.org/blog/2023/08/teach-tidyverse-23/?mkt_tok=NzA5LU5YTi03MDYAAAGQ5fTVHPUSOcW39mLKapFgqb_pX1Qlq-dDO-LMNAUPmQvVQA5dcte6TWKYcvMCwsfLLah05xNVkB5z_oysYgPd6CTaqaa8VaBch1HPunvxw6w">Novidades Tidyverse</a></p>
+<p><a href="https://quarto.org/docs/guide/">Guia Quarto</a></p>
+</section></section>
+<section>
+<section id="dia-2" class="title-slide slide level1 center">
+<h1>Dia 2</h1>
+<p>Git, relatórios em PDF</p>
 </section>
-<section id="revisão" class="slide level2">
-<h2>Revisão</h2>
+<section id="recapitulando" class="slide level2">
+<h2>Recapitulando</h2>
+<p>Vimos:</p>
+<ul>
+<li class="fragment">Uso de sintaxe <code>tidyverse</code> para termos um código mais inteligível</li>
+<li class="fragment">Uso do Rproject para termos um código transportável</li>
+<li class="fragment">Uso do Quarto para produzirmos um documento básico e seus componentes
+<ul>
+<li class="fragment">Cabeçalho</li>
+<li class="fragment">Texto</li>
+<li class="fragment">Blocos de código e suas opções</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="git" class="title-slide slide level1 center">
+<h1>Git</h1>
+<p>Compartilhando e guardando código!</p>
+<div class="quarto-layout-panel" data-layout="[[-20,10,-20]]">
+<div class="quarto-layout-row">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 40.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/git-logo.png" class="quarto-figure quarto-figure-center" data-layout-valign="top"></p>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 40.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</section>
+<section id="git-o-que-é-o-que-come" class="slide level2">
+<h2>Git: o que é? O que come?</h2>
+<p><strong>Definição:</strong> sistema de controle distribuído que monitora alterações em qualquer conjunto de arquivos de computador, comumente usado para coordenar trabalho entre programadores que estão desenvolvendo código fonte de forma colaborativa. Seus objetivos incluem velocidade, integridade e suporte para fluxos de trabalho distribuídos e não lineares.</p>
+<div class="quarto-layout-panel" data-layout="[[-70,30]]">
+<div class="quarto-layout-row">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="imagens/smile2.jpg" class="quarto-figure quarto-figure-right" data-layout-valign="top"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="git-o-que-é-o-que-come-1" class="slide level2">
+<h2>Git: o que é? O que come?</h2>
+<p>Pescando palavras-chave: é um sistema para trabalhar em grupo de forma assíncrona com foco na velocidade de colaboração e integridade do código, garantindo um controle de versões.</p>
+</section>
+<section id="git-fluxo-de-trabalho" class="slide level2">
+<h2>Git: fluxo de trabalho</h2>
+
+<img data-src="imagens/git-flow.png" class="r-stretch"></section>
+<section id="git-fluxo-de-trabalho-1" class="slide level2">
+<h2>Git: fluxo de trabalho</h2>
+<p>Dando um zoom em cada vértice da imagem anterior:</p>
+<ul>
+<li class="fragment"><strong>Commit</strong>: etapa de preparo que fecha um pacote de alterações</li>
+<li class="fragment"><strong>Push</strong>: manda para o servidor o pacote para ser integrado ao branch em que está trabalhando</li>
+<li class="fragment"><strong>Pull</strong>: quando se trabalha com mais pessoas, puxa as alterações que fizeram para que você trabalhe em uma versão atualizada.</li>
+</ul>
+</section>
+<section id="git-operação" class="slide level2">
+<h2>Git: operação</h2>
+<p>Podemos usar:</p>
+<ul>
+<li class="fragment">Terminal</li>
+<li class="fragment">RStudio</li>
+<li class="fragment">Aplicativo desktop</li>
+<li class="fragment">etc</li>
+</ul>
+<p>O ideal é aprender o que melhor combina com as suas habilidades!</p>
+</section>
+<section id="github" class="slide level2">
+<h2>GitHub</h2>
+<p>Vamos explorar a interface do Github!</p>
+<ul>
+<li class="fragment">Dashboard</li>
+<li class="fragment">Menu lateral</li>
+<li class="fragment">Perfil</li>
+<li class="fragment">Repositórios</li>
+</ul>
+</section>
+<section id="repositórios" class="slide level2">
+<h2>Repositórios</h2>
+<p>Repositório é o conceito principal por trás da funcionalidade do GIT.</p>
+<p>É como um drive, com registro de todas as alterações feitras e por quem foram feitas. Assim, podemos resgatar um estado anterior!</p>
+<p>Vamos baixar e abrir o github desktop e conectar a nossa conta Github em <a href="https://desktop.github.com/" class="uri">https://desktop.github.com/</a>.</p>
+</section>
+<section id="criando-um-repositório---code-along" class="slide level2">
+<h2>Criando um repositório - CODE ALONG</h2>
+<p>Formas de criar um repositório:</p>
+<ul>
+<li class="fragment">Github</li>
+<li class="fragment">Github desktop – vamos usar esse</li>
+</ul>
+<p>Com o repositório criado, vamos povoar com arquivos</p>
+<ul>
+<li class="fragment">Verificar no github desktop as alterações</li>
+<li class="fragment">Commit</li>
+<li class="fragment">Push</li>
+<li class="fragment">Ver as alterações no GitHub web</li>
+</ul>
+</section>
+<section id="clonando-um-repositório---code-along" class="slide level2">
+<h2>Clonando um repositório - CODE ALONG</h2>
+<p>Copiando ou clonando um repositório de um colega</p>
+<ul>
+<li class="fragment">Acessar o repositório do seu colega</li>
+<li class="fragment">Baixar o .zip OU copiar a URL</li>
+<li class="fragment">Usar o github desktop para clonar</li>
+</ul>
+<p>Vamos reunir o nome dos repositórios de todos!</p>
+</section>
+<section id="finalizando" class="slide level2">
+<h2>Finalizando</h2>
+<p>Exemplo:</p>
+<ul>
+<li class="fragment">Tradução R4DS: <a href="https://github.com/orgs/cienciadedatos/projects/2/views/1" class="uri">https://github.com/orgs/cienciadedatos/projects/2/views/1</a></li>
+<li class="fragment">Recurso: <a href="https://happygitwithr.com/" class="uri">https://happygitwithr.com/</a></li>
+</ul>
+</section></section>
+<section>
+<section id="relatórios-com-quarto" class="title-slide slide level1 center">
+<h1>Relatórios com Quarto</h1>
+<div class="quarto-layout-panel" data-layout="[[-20,20,-20]]">
+<div class="quarto-layout-row">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/fig-relatorios.png" class="quarto-figure quarto-figure-center" data-layout-valign="top"></p>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</section>
+<section id="composição-de-artigorelatório" class="slide level2">
+<h2>Composição de artigo/relatório</h2>
+<p><br>
+<br>
+Quais elementos compõem um artigo ou relatório?</p>
+<p>Que tipos de leitores temos?</p>
+<p>Vamos visitar o guia básico de PDF no Quarto.</p>
+</section>
+<section id="composição-de-artigorelatório-1" class="slide level2">
+<h2>Composição de artigo/relatório</h2>
+<p>Temos 20 minutos para:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li class="fragment">Criar um PDF no editor visual com o máximo de coisas que listamos</li>
+<li class="fragment">É <strong>necessário</strong> ter um gráfico em ggplot</li>
+<li class="fragment">É <strong>necessário</strong> ter uma referência cruzada para uma tabela, equação ou figura</li>
+<li class="fragment"><strong>Usem o chatGPT</strong>.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p>Recursos:</p>
+<ul>
+<li class="fragment"><a href="https://quarto.org/docs/output-formats/pdf-basics.html" class="uri">https://quarto.org/docs/output-formats/pdf-basics.html</a></li>
+<li class="fragment"><a href="https://quarto.org/docs/reference/formats/pdf.html" class="uri">https://quarto.org/docs/reference/formats/pdf.html</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="apresentação" class="slide level2">
+<h2>Apresentação</h2>
+<p>Precisamos de 4 ou 5 voluntários para apresentarmos os relatórios:</p>
+<ul>
+<li class="fragment">De quem sentiu que falhou miseravelmente</li>
+<li class="fragment">De quem sente que teve muito sucesso</li>
+</ul>
+</section>
+<section id="integrando" class="slide level2">
+<h2>Integrando</h2>
+<p>Vamos subir nossos relatórios prontos nos próprios gits.</p>
+<p>Clonem o repositório que gostaram mais ou copiem o código direto do repositório.</p>
+</section>
+<section id="recapitulando-1" class="slide level2">
+<h2>Recapitulando</h2>
+<ul>
+<li class="fragment">Trabalhamos com Git</li>
+<li class="fragment">Usamos o Github Desktop para operar o repositório</li>
+<li class="fragment">Produzimos um relatório em PDF</li>
+<li class="fragment">Atualizamos nosso repositório</li>
+<li class="fragment">Copiamos um repositório do nosso interesse</li>
+</ul>
+</section>
+<section id="amanhã" class="slide level2">
+<h2>Amanhã</h2>
+<p>Teremos uma sessão mais curta!</p>
+<ul>
+<li class="fragment">Apresentações</li>
+<li class="fragment">Github pages</li>
+<li class="fragment">Outros formatos</li>
+</ul>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
