@@ -280,43 +280,37 @@ Compartilhando e guardando código!
 
 Pescando palavras-chave: é um sistema para trabalhar em grupo de forma assíncrona com foco na velocidade de colaboração e integridade do código, garantindo um controle de versões.
 
-
-
-
 ## Git: fluxo de trabalho
 
 ![](imagens/git-flow.png)
-
 
 ## Git: fluxo de trabalho
 
 Dando um zoom em cada vértice da imagem anterior:
 
-- **Commit**: etapa de preparo que fecha um pacote de alterações
-- **Push**: manda para o servidor o pacote para ser integrado ao branch em que está trabalhando
-- **Pull**: quando se trabalha com mais pessoas, puxa as alterações que fizeram para que você trabalhe em uma versão atualizada.
+-   **Commit**: etapa de preparo que fecha um pacote de alterações
+-   **Push**: manda para o servidor o pacote para ser integrado ao branch em que está trabalhando
+-   **Pull**: quando se trabalha com mais pessoas, puxa as alterações que fizeram para que você trabalhe em uma versão atualizada.
 
 ## Git: operação
 
 Podemos usar:
 
-- Terminal
-- RStudio
-- Aplicativo desktop
-- etc
+-   Terminal
+-   RStudio
+-   Aplicativo desktop
+-   etc
 
 O ideal é aprender o que melhor combina com as suas habilidades!
-
 
 ## GitHub
 
 Vamos explorar a interface do Github!
 
-- Dashboard
-- Menu lateral
-- Perfil
-- Repositórios
-
+-   Dashboard
+-   Menu lateral
+-   Perfil
+-   Repositórios
 
 ## Repositórios
 
@@ -326,30 +320,27 @@ Repositório é o conceito principal por trás da funcionalidade do GIT.
 
 Vamos baixar e abrir o github desktop e conectar a nossa conta Github em <https://desktop.github.com/>.
 
-
-
 ## Criando um repositório - CODE ALONG
 
 Formas de criar um repositório:
 
-- Github
-- Github desktop -- vamos usar esse
+-   Github
+-   Github desktop -- vamos usar esse
 
 Com o repositório criado, vamos povoar com arquivos
 
-- Verificar no github desktop as alterações
-- Commit
-- Push
-- Ver as alterações no GitHub web
-
+-   Verificar no github desktop as alterações
+-   Commit
+-   Push
+-   Ver as alterações no GitHub web
 
 ## Clonando um repositório - CODE ALONG
 
 Copiando ou clonando um repositório de um colega
 
-- Acessar o repositório do seu colega
-- Baixar o .zip OU copiar a URL
-- Usar o github desktop para clonar
+-   Acessar o repositório do seu colega
+-   Baixar o .zip OU copiar a URL
+-   Usar o github desktop para clonar
 
 Vamos reunir o nome dos repositórios de todos!
 
@@ -357,9 +348,8 @@ Vamos reunir o nome dos repositórios de todos!
 
 Exemplo:
 
-- Tradução R4DS: <https://github.com/orgs/cienciadedatos/projects/2/views/1>
-- Recurso: <https://happygitwithr.com/>
-
+-   Tradução R4DS: <https://github.com/orgs/cienciadedatos/projects/2/views/1>
+-   Recurso: <https://happygitwithr.com/>
 
 # Relatórios com Quarto
 
@@ -377,38 +367,32 @@ Que tipos de leitores temos?
 
 Vamos visitar o guia básico de PDF no Quarto.
 
-
-
 ## Composição de artigo/relatório
 
 Temos 20 minutos para:
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
-- Criar um PDF no editor visual com o máximo de coisas que listamos
-- É **necessário** ter um gráfico em ggplot
-- É **necessário** ter uma referência cruzada para uma tabela, equação ou figura
-- **Usem o chatGPT**.
+-   Criar um PDF no editor visual com o máximo de coisas que listamos
+-   É **necessário** ter um gráfico em ggplot
+-   É **necessário** ter uma referência cruzada para uma tabela, equação ou figura
+-   **Usem o chatGPT**.
 :::
 
 ::: {.column width="50%"}
 Recursos:
 
-- <https://quarto.org/docs/output-formats/pdf-basics.html>
-- <https://quarto.org/docs/reference/formats/pdf.html>
+-   <https://quarto.org/docs/output-formats/pdf-basics.html>
+-   <https://quarto.org/docs/reference/formats/pdf.html>
 :::
-
-::::
-
+:::
 
 ## Apresentação
 
 Precisamos de 4 ou 5 voluntários para apresentarmos os relatórios:
 
-- De quem sentiu que falhou miseravelmente
-- De quem sente que teve muito sucesso 
-
+-   De quem sentiu que falhou miseravelmente
+-   De quem sente que teve muito sucesso
 
 ## Integrando
 
@@ -418,19 +402,64 @@ Clonem o repositório que gostaram mais ou copiem o código direto do repositór
 
 ## Recapitulando
 
-- Trabalhamos com Git
-- Usamos o Github Desktop para operar o repositório
-- Produzimos um relatório em PDF
-- Atualizamos nosso repositório
-- Copiamos um repositório do nosso interesse
-
+-   Trabalhamos com Git
+-   Usamos o Github Desktop para operar o repositório
+-   Produzimos um relatório em PDF
+-   Atualizamos nosso repositório
+-   Copiamos um repositório do nosso interesse
 
 ## Amanhã
 
 Teremos uma sessão mais curta!
 
-- Apresentações
-- Github pages
-- Outros formatos
+-   Apresentações
+-   Github pages
+-   Outros formatos
 
+# Dia 3
 
+## Apresentações
+
+Vimos que para gerar apresentações, devemos usar o `yaml` básico da seguite forma:
+
+``` yaml
+title: "Minha apresentação"
+format: revealjs
+```
+
+## Hospedando como uma página GitHub
+
+Para hospedar a sua apresentação como uma página no GitHub, que ficará online para temos alguns critérios:
+
+-   Temos um projeto, ou seja, uma pasta em que constam os documentos necessários para o seu trabalho e um arquivo `.Rproj`;
+-   Esse projeto já precisa estar hospedado como um repositório no GitHub;
+
+## Hospedando como uma página GitHub
+
+Em seguida, é preciso acessar o documento `_quarto.yml` e fazer a seguinte alteração e **salvar** o documento em seguida:
+
+``` yaml
+project:
+  type: website
+  output-dir: docs
+  title: "nome_do_seu_projeto"
+```
+
+O tipo do projeto deve ser 'website' e o diretório de saída deve ser docs. Verifique que, depois de salvar o documento e renderizar a apresentação, existe uma pasta `docs` com o HTML da apresentação.
+
+## Hospedando como uma página GitHub
+
+Por último, dentro do seu repositório na página web do Github, acesse `Settings` no menu horizontal superior e procure `pages` no menu lateral esquerdo.
+
+Será aberta uma página com título `GitHub Pages`. Em `Build and deployment`, selecione:
+
+-   Source: Deploy from a branch
+-   Branch: `main` (se for essa que estiver usando) e logo a seguir `/docs`. Aperte o botão [Save]{.underline}.
+
+## Hospedando como uma página GitHub
+
+Em alguns minutos, sua página deve estar disponível e o endereço é verificado na mesma página em que ajustou o deploy.
+
+Verifique que há uma página online na página principal do repositório nas informações disponíveis na lateral direita em `Deployments`. É possível que você precise rolar a página para baixo.
+
+# Obrigado por participar do curso!

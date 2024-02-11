@@ -312,6 +312,41 @@
     "href": "apresentacao.html#amanhã",
     "title": "Do Código ao Compartilhamento",
     "section": "Amanhã",
-    "text": "Amanhã\nTeremos uma sessão mais curta!\n\nApresentações\nGithub pages\nOutros formatos\n\n\n\n\nSlides por César Galvão, feito com Quarto. Código disponível no GitHub."
+    "text": "Amanhã\nTeremos uma sessão mais curta!\n\nApresentações\nGithub pages\nOutros formatos"
+  },
+  {
+    "objectID": "apresentacao.html#apresentações",
+    "href": "apresentacao.html#apresentações",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Apresentações",
+    "text": "Apresentações\nVimos que para gerar apresentações, devemos usar o yaml básico da seguite forma:\ntitle: \"Minha apresentação\"\nformat: revealjs"
+  },
+  {
+    "objectID": "apresentacao.html#hospedando-como-uma-página-github",
+    "href": "apresentacao.html#hospedando-como-uma-página-github",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Hospedando como uma página GitHub",
+    "text": "Hospedando como uma página GitHub\nPara hospedar a sua apresentação como uma página no GitHub, que ficará online para temos alguns critérios:\n\nTemos um projeto, ou seja, uma pasta em que constam os documentos necessários para o seu trabalho e um arquivo .Rproj;\nEsse projeto já precisa estar hospedado como um repositório no GitHub;"
+  },
+  {
+    "objectID": "apresentacao.html#hospedando-como-uma-página-github-1",
+    "href": "apresentacao.html#hospedando-como-uma-página-github-1",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Hospedando como uma página GitHub",
+    "text": "Hospedando como uma página GitHub\nEm seguida, é preciso acessar o documento _quarto.yml e fazer a seguinte alteração e salvar o documento em seguida:\nproject:\n  type: website\n  output-dir: docs\n  title: \"nome_do_seu_projeto\"\nO tipo do projeto deve ser ‘website’ e o diretório de saída deve ser docs. Verifique que, depois de salvar o documento e renderizar a apresentação, existe uma pasta docs com o HTML da apresentação."
+  },
+  {
+    "objectID": "apresentacao.html#hospedando-como-uma-página-github-2",
+    "href": "apresentacao.html#hospedando-como-uma-página-github-2",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Hospedando como uma página GitHub",
+    "text": "Hospedando como uma página GitHub\nPor último, dentro do seu repositório na página web do Github, acesse Settings no menu horizontal superior e procure pages no menu lateral esquerdo.\nSerá aberta uma página com título GitHub Pages. Em Build and deployment, selecione:\n\nSource: Deploy from a branch\nBranch: main (se for essa que estiver usando) e logo a seguir /docs. Aperte o botão Save."
+  },
+  {
+    "objectID": "apresentacao.html#hospedando-como-uma-página-github-3",
+    "href": "apresentacao.html#hospedando-como-uma-página-github-3",
+    "title": "Do Código ao Compartilhamento",
+    "section": "Hospedando como uma página GitHub",
+    "text": "Hospedando como uma página GitHub\nEm alguns minutos, sua página deve estar disponível e o endereço é verificado na mesma página em que ajustou o deploy.\nVerifique que há uma página online na página principal do repositório nas informações disponíveis na lateral direita em Deployments. É possível que você precise rolar a página para baixo."
   }
 ]

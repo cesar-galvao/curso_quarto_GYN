@@ -1,0 +1,18 @@
+---
+title: "Apresentação pessoal"
+author: "César Galvão"
+format: revealjs
+---
+
+## Tarefa
+
+Começar uma apresentação
+
+- Estrutura de slides
+- apresentação de si
+- <https://quarto.org/docs/presentations/>
+
+- Uma foto
+- Um diagrama
+- Um Callout
+- Um tema que não seja o básico

@@ -977,13 +977,58 @@ Quais elementos compõem um artigo ou relatório?</p>
 <li class="fragment">Github pages</li>
 <li class="fragment">Outros formatos</li>
 </ul>
+</section></section>
+<section>
+<section id="dia-3" class="title-slide slide level1 center">
+<h1>Dia 3</h1>
+
+</section>
+<section id="apresentações" class="slide level2">
+<h2>Apresentações</h2>
+<p>Vimos que para gerar apresentações, devemos usar o <code>yaml</code> básico da seguite forma:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Minha apresentação"</span></span>
+<span id="cb2-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="hospedando-como-uma-página-github" class="slide level2">
+<h2>Hospedando como uma página GitHub</h2>
+<p>Para hospedar a sua apresentação como uma página no GitHub, que ficará online para temos alguns critérios:</p>
+<ul>
+<li class="fragment">Temos um projeto, ou seja, uma pasta em que constam os documentos necessários para o seu trabalho e um arquivo <code>.Rproj</code>;</li>
+<li class="fragment">Esse projeto já precisa estar hospedado como um repositório no GitHub;</li>
+</ul>
+</section>
+<section id="hospedando-como-uma-página-github-1" class="slide level2">
+<h2>Hospedando como uma página GitHub</h2>
+<p>Em seguida, é preciso acessar o documento <code>_quarto.yml</code> e fazer a seguinte alteração e <strong>salvar</strong> o documento em seguida:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb3-2"><a></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb3-3"><a></a><span class="at">  </span><span class="fu">output-dir</span><span class="kw">:</span><span class="at"> docs</span></span>
+<span id="cb3-4"><a></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"nome_do_seu_projeto"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>O tipo do projeto deve ser ‘website’ e o diretório de saída deve ser docs. Verifique que, depois de salvar o documento e renderizar a apresentação, existe uma pasta <code>docs</code> com o HTML da apresentação.</p>
+</section>
+<section id="hospedando-como-uma-página-github-2" class="slide level2">
+<h2>Hospedando como uma página GitHub</h2>
+<p>Por último, dentro do seu repositório na página web do Github, acesse <code>Settings</code> no menu horizontal superior e procure <code>pages</code> no menu lateral esquerdo.</p>
+<p>Será aberta uma página com título <code>GitHub Pages</code>. Em <code>Build and deployment</code>, selecione:</p>
+<ul>
+<li class="fragment">Source: Deploy from a branch</li>
+<li class="fragment">Branch: <code>main</code> (se for essa que estiver usando) e logo a seguir <code>/docs</code>. Aperte o botão <u>Save</u>.</li>
+</ul>
+</section>
+<section id="hospedando-como-uma-página-github-3" class="slide level2">
+<h2>Hospedando como uma página GitHub</h2>
+<p>Em alguns minutos, sua página deve estar disponível e o endereço é verificado na mesma página em que ajustou o deploy.</p>
+<p>Verifique que há uma página online na página principal do repositório nas informações disponíveis na lateral direita em <code>Deployments</code>. É possível que você precise rolar a página para baixo.</p>
+</section></section>
+<section id="obrigado-por-participar-do-curso" class="title-slide slide level1 center">
+<h1>Obrigado por participar do curso!</h1>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>Slides por César Galvão, feito com <a href="https://quarto.org/docs/presentations/revealjs/index.html">Quarto</a>. Código disponível no <a href="https://github.com/cesar-galvao/curso_quarto_GYN">GitHub</a>.</p>
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
